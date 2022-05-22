@@ -1,0 +1,24 @@
+.about {
+  background-color: var(--color-bg);
+  &__container {
+    padding: var(--main-offset) var(--container-offset);
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  &__left {
+    max-width: 360px;
+    margin-right: 40px;
+  }
+  &__right {
+    max-width: 370px;
+  }
+  &__text {
+    margin-bottom: 41px;
+  }
+  &__btn {
+    display: inline-block;
+    padding: 11px 13px;
+  }
+}

@@ -1,0 +1,17 @@
+.representation {
+  background-color: var(--color-light);
+  &__container {
+    padding: var(--main-offset) var(--container-offset) 0;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 96px;
+    text-align: center;
+    color: var(--color-accent);
+    margin-bottom: 130px;
+  }
+  &__image {
+    text-align: center;
+  }
+}

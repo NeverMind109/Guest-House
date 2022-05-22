@@ -164,6 +164,16 @@ a {
   }
 }
 
+.decorate {
+  @include flex-all-center;
+  margin-bottom: 32px;
+  &__block {
+    width: 42px;
+    height: 8px;
+    background-color: var(--color-zest);
+  }
+}
+
 .burger {
   @include burger;
 
