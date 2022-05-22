@@ -1,0 +1,29 @@
+.book {
+  background-color: var(--color-bg);
+  &__container {
+    @include flex-all-center;
+
+    flex-direction: column;
+    padding: var(--main-offset) var(--container-offset);
+  }
+  &__decorate {
+    margin-bottom: 30px;
+  }
+  &__title {
+    max-width: 550px;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  &__descr {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+  &__contact {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  &__btn {
+    display: inline-block;
+  }
+}

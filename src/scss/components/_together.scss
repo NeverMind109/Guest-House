@@ -1,0 +1,44 @@
+.together {
+  background-color: var(--color-light);
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--main-offset) var(--container-offset) 70px;
+  }
+  &__image {
+    text-align: center;
+  }
+  &__info {
+    max-width: 552px;
+  }
+  &__decorate {
+    justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+  &__title {
+    margin-bottom: 12px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  &__item {
+    margin-bottom: 55px;
+    margin-right: 16px;
+  }
+}
+.module {
+  width: 260px;
+  &__item {
+    display: flex;
+  }
+  &__img {
+    height: 36px;
+    margin-right: 16px;
+  }
+  &__descr {
+    max-width: 203px;
+    color: var(--color-shaft);
+  }
+}

@@ -23,7 +23,7 @@
   &__btn-wrapper {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 70px;
+    padding-bottom: 70px;
   }
   &__slider-btn {
     width: 60px;
@@ -86,14 +86,18 @@
 }
 .star {
   &__full {
+    display: block;
     width: 100%;
     height: 100%;
     fill: var(--color-accent);
+    object-fit: cover;
   }
   &__empty {
+    display: block;
     width: 100%;
     height: 100%;
     stroke: var(--color-accent);
     fill: transparent;
+    object-fit: cover;
   }
 }
