@@ -1,0 +1,109 @@
+.footer {
+  background-color: var(--color-accent);
+  &__container {
+    padding: var(--main-offset) var(--container-offset);
+  }
+  &__upper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 47px;
+  }
+  &__column {
+    &:nth-child(2) {
+      padding-left: 50px;
+      .footer__heading {
+        margin-bottom: 20px;
+      }
+    }
+    &:nth-child(3) {
+      .footer__heading {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__heading {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-light);
+    margin-bottom: 11px;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 11px;
+    }
+  }
+  &__link {
+    color: var(--color-light);
+    &:hover {
+      border-bottom: 1px solid var(--color-light);
+    }
+  }
+  &__descr {
+    max-width: 576px;
+    color: var(--color-light);
+    margin-bottom: 10px;
+  }
+  &__form {
+    position: relative;
+    max-width: 576px;
+  }
+  &__input {
+    width: 100%;
+    height: 52px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-accent);
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 0 70px 0 30px;
+    &::placeholder {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--color-accent);
+    }
+  }
+  &__btn {
+    position: absolute;
+    top: 50%;
+    right: 7px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    line-height: 20px;
+    padding: 5px;
+  }
+  &__bottom {
+    @include flex-v-center;
+    flex-direction: column;
+  }
+  &__logo {
+    margin-bottom: 12px;
+  }
+  &__text {
+    color: var(--color-light);
+    margin-bottom: 20px;
+  }
+  &__contacts {
+    display: flex;
+  }
+  &__contact {
+    color: var(--color-light);
+    &:not(:last-child) {
+      position: relative;
+      padding-right: 22px;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 6px;
+        transform: translateY(-50%);
+        display: block;
+        width: 10px;
+        height: 1px;
+        background-color: var(--color-light);
+      }
+    }
+  }
+}

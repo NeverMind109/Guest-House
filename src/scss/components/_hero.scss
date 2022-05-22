@@ -2,6 +2,7 @@
   @include bg-cover;
 
   position: relative;
+  background-color: var(--colo-bg);
   background-image: url("../img/hero-bg.jpg");
   &__container {
     @include flex-all-center;
@@ -11,7 +12,7 @@
   &__logo {
     width: 256px;
     height: 90px;
-    background-image: url("../img/logo-big.svg");
+    background-image: url("../img/logo.svg");
     @include bg-cover;
     margin-bottom: 37px;
   }
