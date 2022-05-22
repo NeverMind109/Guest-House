@@ -1,3 +1,38 @@
 <header class="header">
-  <div class="container"></div>
+  <div class="container header__container">
+    <a class="logo header__logo" href="index.html">
+      <img
+        class="logo__img"
+        src="img/logo.svg"
+        alt="Guest House Logo"
+        width="128"
+        height="45"
+      />
+    </a>
+    <nav class="nav" title="Navigation" data-menu>
+      <ul class="list-reset nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link" data-menu-item>Start</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link" data-menu-item>Contact</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link" data-menu-item>Our history</a>
+        </li>
+        <li class="nav__item">
+          <a class="btn btn--white nav__btn" href="#">Book now</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="btn btn--white header__btn" href="#">Book now</a>
+    <button
+      class="burger"
+      aria-label="Открыть меню"
+      aria-expanded="false"
+      data-burger
+    >
+      <span class="burger__line"></span>
+    </button>
+  </div>
 </header>

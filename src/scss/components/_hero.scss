@@ -1,0 +1,40 @@
+.hero {
+  @include bg-cover;
+
+  position: relative;
+  background-image: url("../img/hero-bg.jpg");
+  &__container {
+    @include flex-all-center;
+    flex-direction: column;
+    padding: 248px 0 92px;
+  }
+  &__logo {
+    width: 256px;
+    height: 90px;
+    background-image: url("../img/logo-big.svg");
+    @include bg-cover;
+    margin-bottom: 37px;
+  }
+  &__title {
+    font-size: 48px;
+    line-height: 53px;
+    text-align: center;
+    color: var(--color-light);
+    margin-bottom: 33px;
+  }
+  &__descr {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-light);
+    margin-bottom: 114px;
+  }
+  &__mouse {
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/mouse.svg");
+    @include bg-cover;
+  }
+}

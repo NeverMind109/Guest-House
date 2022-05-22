@@ -163,3 +163,14 @@ a {
     background: var(--color-light);
   }
 }
+
+.burger {
+  @include burger;
+
+  display: none;
+
+  @include tablet {
+    display: flex;
+    z-index: 100;
+  }
+}
