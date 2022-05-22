@@ -1,0 +1,26 @@
+.arrangements {
+  background-color: var(--color-bg);
+  &__container {
+    padding: var(--main-offset) var(--container-offset);
+  }
+  &__wrapper {
+    text-align: center;
+  }
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__descr {
+    max-width: 600px;
+    margin: 0 auto 32px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.arrangement {
+  max-width: 347px;
+  &__img {
+    margin-bottom: 5px;
+  }
+}

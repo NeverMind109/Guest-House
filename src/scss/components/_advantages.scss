@@ -1,0 +1,37 @@
+.advantages {
+  background-color: var(--color-light);
+  &__container {
+    padding: var(--main-offset) var(--container-offset) 70px;
+  }
+  &__decorate {
+    justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+  &__title {
+    margin-bottom: 14px;
+  }
+  &__descr {
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    margin-bottom: 31px;
+  }
+}
+.advantage {
+  display: flex;
+  align-items: flex-start;
+  width: 50%;
+  &__img {
+    margin-right: 16px;
+  }
+  &__text {
+    display: block;
+    color: var(--color-shaft);
+    padding-bottom: 10px;
+  }
+}
