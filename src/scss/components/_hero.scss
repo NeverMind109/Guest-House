@@ -8,6 +8,10 @@
     @include flex-all-center;
     flex-direction: column;
     padding: 248px 0 92px;
+
+    @include tablet {
+      padding: 150px 0 50px;
+    }
   }
   &__logo {
     width: 256px;
@@ -15,6 +19,11 @@
     background-image: url("../img/logo.svg");
     @include bg-cover;
     margin-bottom: 37px;
+
+    @include small-tablet {
+      width: 200px;
+      height: 75px;
+    }
   }
   &__title {
     font-size: 48px;
@@ -22,6 +31,17 @@
     text-align: center;
     color: var(--color-light);
     margin-bottom: 33px;
+
+    @include small-tablet {
+      width: 90%;
+      font-size: 35px;
+      line-height: 45px;
+      margin-bottom: 20px;
+    }
+    @include mobile {
+      font-size: 25px;
+      line-height: 28px;
+    }
   }
   &__descr {
     font-size: 14px;
@@ -31,6 +51,13 @@
     text-transform: uppercase;
     color: var(--color-light);
     margin-bottom: 114px;
+
+    @include tablet {
+      margin-bottom: 75px;
+    }
+    @include small-tablet {
+      margin-bottom: 35px;
+    }
   }
   &__mouse {
     width: 60px;

@@ -2,6 +2,10 @@
   background-color: var(--color-bg);
   &__container {
     padding: var(--main-offset) var(--container-offset);
+
+    @include tablet {
+      padding: var(--small-offset) var(--container-offset);
+    }
   }
   &__wrapper {
     text-align: center;
@@ -12,15 +16,33 @@
   &__descr {
     max-width: 600px;
     margin: 0 auto 32px;
+
+    @include small-tablet {
+      max-width: none;
+    }
   }
   &__list {
     display: flex;
     justify-content: space-between;
+
+    @include small-tablet {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 .arrangement {
   max-width: 347px;
   &__img {
     margin-bottom: 5px;
+  }
+
+  @include small-tablet {
+    max-width: none;
+    width: 75%;
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
   }
 }

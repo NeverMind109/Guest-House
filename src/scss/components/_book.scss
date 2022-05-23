@@ -5,6 +5,10 @@
 
     flex-direction: column;
     padding: var(--main-offset) var(--container-offset);
+
+    @include tablet {
+      padding: var(--small-offset) var(--container-offset);
+    }
   }
   &__decorate {
     margin-bottom: 30px;
@@ -13,15 +17,29 @@
     max-width: 550px;
     text-align: center;
     margin-bottom: 12px;
+
+    @include small-tablet {
+      max-width: none;
+    }
   }
   &__descr {
     max-width: 600px;
     text-align: center;
     margin: 0 auto 20px;
+
+    @include small-tablet {
+      max-width: none;
+    }
   }
   &__contact {
     display: inline-block;
     margin-right: 20px;
+
+    @include small-tablet {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
   }
   &__btn {
     display: inline-block;

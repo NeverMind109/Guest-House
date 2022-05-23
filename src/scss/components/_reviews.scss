@@ -1,6 +1,10 @@
 .reviews {
   background-color: var(--color-bg);
   padding: var(--main-offset) 0 0;
+
+  @include tablet {
+    padding: var(--small-offset) 0 0;
+  }
   &__container {
     @include flex-v-center;
     flex-direction: column;
@@ -15,6 +19,10 @@
     max-width: 600px;
     text-align: center;
     margin: 0 auto 32px;
+
+    @include small-tablet {
+      max-width: none;
+    }
   }
   &__slider {
     position: relative;
@@ -24,6 +32,10 @@
     display: flex;
     justify-content: flex-end;
     padding-bottom: 70px;
+
+    @include tablet {
+      padding-bottom: 35px;
+    }
   }
   &__slider-btn {
     width: 60px;
@@ -35,6 +47,12 @@
     &:hover {
       background-color: var(--color-shaft);
       border: none;
+    }
+
+    @include mobile {
+      width: 35px;
+      height: 35px;
+      margin-top: 10px;
     }
   }
   &__slider-prev {
@@ -82,6 +100,15 @@
       width: 2px;
       background-color: var(--color-zest);
     }
+  }
+
+  @include small-tablet {
+    max-width: none;
+    width: 75%;
+  }
+  @include mobile {
+    width: 90%;
+    padding: 10px;
   }
 }
 .star {

@@ -2,22 +2,65 @@
   background-color: var(--color-accent);
   &__container {
     padding: var(--main-offset) var(--container-offset);
+
+    @include tablet {
+      padding: var(--small-offset) var(--container-offset);
+    }
   }
   &__upper {
     display: flex;
     justify-content: space-between;
     margin-bottom: 47px;
+
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    @include mobile {
+      justify-content: space-between;
+    }
   }
   &__column {
+    &:nth-child(1) {
+      @include tablet {
+        margin-bottom: 25px;
+      }
+      @include mobile {
+        margin-bottom: 0;
+      }
+    }
     &:nth-child(2) {
       padding-left: 50px;
       .footer__heading {
         margin-bottom: 20px;
       }
+
+      @include tablet {
+        padding-left: 0;
+        margin-bottom: 25px;
+      }
+      @include mobile {
+        margin-bottom: 0;
+      }
     }
     &:nth-child(3) {
       .footer__heading {
         margin-bottom: 0;
+
+        @include tablet {
+          margin-bottom: 15px;
+        }
+      }
+
+      @include tablet {
+        @include flex-v-center;
+
+        width: 100%;
+        flex-direction: column;
+      }
+      @include mobile {
+        order: -1;
+        margin-bottom: 25px;
       }
     }
   }
@@ -26,6 +69,10 @@
     text-transform: uppercase;
     color: var(--color-light);
     margin-bottom: 11px;
+
+    @include tablet {
+      margin-bottom: 15px;
+    }
   }
   &__item {
     &:not(:last-child) {
@@ -42,10 +89,28 @@
     max-width: 576px;
     color: var(--color-light);
     margin-bottom: 10px;
+
+    @include tablet {
+      max-width: none;
+      width: 75%;
+      text-align: center;
+      margin: 0 auto 20px;
+    }
+    @include mobile {
+      width: 100%;
+    }
   }
   &__form {
     position: relative;
     max-width: 576px;
+
+    @include tablet {
+      max-width: none;
+      width: 75%;
+    }
+    @include mobile {
+      width: 100%;
+    }
   }
   &__input {
     width: 100%;
@@ -84,9 +149,19 @@
   &__text {
     color: var(--color-light);
     margin-bottom: 20px;
+
+    @include small-tablet {
+      text-align: center;
+      margin: 0 auto 20px;
+    }
   }
   &__contacts {
     display: flex;
+
+    @include small-tablet {
+      flex-direction: column;
+      justify-content: center;
+    }
   }
   &__contact {
     color: var(--color-light);
@@ -103,7 +178,20 @@
         width: 10px;
         height: 1px;
         background-color: var(--color-light);
+
+        @include small-tablet {
+          display: none;
+        }
       }
+
+      @include small-tablet {
+        padding-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+    @include small-tablet {
+      text-align: center;
     }
   }
 }

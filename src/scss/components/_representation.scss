@@ -2,6 +2,10 @@
   background-color: var(--color-light);
   &__container {
     padding: var(--main-offset) var(--container-offset) 0;
+
+    @include tablet {
+      padding: var(--small-offset) var(--container-offset) 0;
+    }
   }
   &__title {
     font-weight: 700;
@@ -10,8 +14,29 @@
     text-align: center;
     color: var(--color-accent);
     margin-bottom: 130px;
+
+    @include big-desktop {
+      font-size: 48px;
+      line-height: 53px;
+      margin-bottom: 50px;
+    }
+    @include small-tablet {
+      width: 90%;
+      font-size: 35px;
+      line-height: 45px;
+      margin: 0 auto 20px;
+    }
+    @include mobile {
+      font-size: 25px;
+      line-height: 28px;
+    }
   }
   &__image {
     text-align: center;
+  }
+  &__img {
+    @include mobile {
+      height: 200px;
+    }
   }
 }

@@ -4,16 +4,39 @@
     display: flex;
     justify-content: space-between;
     padding: var(--main-offset) var(--container-offset) 70px;
+
+    @include tablet {
+      padding: var(--small-offset) var(--container-offset);
+    }
+    @include small-tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
   &__image {
     text-align: center;
   }
+  &__img {
+    @include mobile {
+      height: 200px;
+    }
+  }
   &__info {
     max-width: 552px;
+
+    @include small-tablet {
+      max-width: none;
+      text-align: center;
+      margin-bottom: 25px;
+    }
   }
   &__decorate {
     justify-content: flex-start;
     margin-bottom: 30px;
+
+    @include small-tablet {
+      justify-content: center;
+    }
   }
   &__title {
     margin-bottom: 12px;
@@ -22,16 +45,32 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+
+    @include small-tablet {
+      justify-content: center;
+    }
   }
   &__item {
     margin-bottom: 55px;
     margin-right: 16px;
+
+    @include tablet {
+      margin-bottom: 25px;
+    }
+    @include mobile {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
   }
 }
 .module {
   width: 260px;
   &__item {
     display: flex;
+
+    @include mobile {
+      justify-content: center;
+    }
   }
   &__img {
     height: 36px;
@@ -40,5 +79,13 @@
   &__descr {
     max-width: 203px;
     color: var(--color-shaft);
+  }
+
+  @include small-tablet {
+    width: 45%;
+  }
+
+  @include mobile {
+    width: 100%;
   }
 }

@@ -2,20 +2,44 @@
   background-color: var(--color-bg);
   &__container {
     padding: var(--main-offset) var(--container-offset);
+
+    @include tablet {
+      padding: var(--small-offset) var(--container-offset);
+    }
   }
   &__wrapper {
     display: flex;
     justify-content: center;
+
+    @include small-tablet {
+      flex-wrap: wrap;
+    }
   }
   &__left {
     max-width: 360px;
     margin-right: 40px;
+
+    @include small-tablet {
+      max-width: none;
+      text-align: center;
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
   }
   &__right {
     max-width: 370px;
+
+    @include small-tablet {
+      max-width: none;
+      text-align: center;
+    }
   }
   &__text {
     margin-bottom: 41px;
+
+    @include small-tablet {
+      margin-bottom: 25px;
+    }
   }
   &__btn {
     display: inline-block;

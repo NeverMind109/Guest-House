@@ -2,10 +2,22 @@
   background-color: var(--color-light);
   &__container {
     padding: var(--main-offset) var(--container-offset) 70px;
+
+    @include tablet {
+      padding: var(--small-offset) var(--container-offset);
+    }
+    @include small-tablet {
+      justify-content: center;
+      text-align: center;
+    }
   }
   &__decorate {
     justify-content: flex-start;
     margin-bottom: 30px;
+
+    @include small-tablet {
+      justify-content: center;
+    }
   }
   &__title {
     margin-bottom: 14px;
@@ -13,13 +25,25 @@
   &__descr {
     max-width: 600px;
     margin-bottom: 30px;
+
+    @include small-tablet {
+      max-width: none;
+    }
   }
   &__list {
     display: flex;
     flex-wrap: wrap;
+
+    @include small-tablet {
+      text-align: left;
+    }
   }
   &__item {
     margin-bottom: 31px;
+
+    @include mobile {
+      margin-bottom: 15px;
+    }
   }
 }
 .advantage {
@@ -33,5 +57,9 @@
     display: block;
     color: var(--color-shaft);
     padding-bottom: 10px;
+  }
+
+  @include small-tablet {
+    width: 100%;
   }
 }

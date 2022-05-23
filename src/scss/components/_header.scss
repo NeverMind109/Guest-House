@@ -9,6 +9,10 @@
     @include flex-all-sb;
 
     padding: 6px var(--container-offset) 15px;
+
+    @include big-desktop {
+      padding: 15px var(--container-offset);
+    }
   }
   &__btn {
     display: inline-block;
