@@ -15,6 +15,7 @@
       height: 100%;
       fill: var(--color-light);
       object-fit: cover;
+      transition: fill 0.3s ease-in-out;
     }
     &:hover {
       svg {
