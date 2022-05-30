@@ -1,12 +1,17 @@
 <section class="together">
   <div class="together__image">
-    <img
-      class="together__img"
-      src="img/room.jpg"
-      alt=""
-      width="1440"
-      height="600"
-    />
+    <picture>
+      <source srcset="img/room.avif" type="image/avif" />
+      <source srcset="img/room.webp" type="image/webp" />
+      <img
+        class="together__img"
+        loading="lazy"
+        src="img/room.jpg"
+        width="1440"
+        height="600"
+        alt=""
+      />
+    </picture>
   </div>
   <div class="container together__container">
     <div class="together__info">

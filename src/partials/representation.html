@@ -8,12 +8,17 @@
     </h2>
   </div>
   <div class="representation__image">
-    <img
-      class="representation__img"
-      src="img/representation-img.jpg"
-      alt=""
-      width="1584"
-      height="660"
-    />
+    <picture>
+      <source srcset="img/representation-img.avif" type="image/avif" />
+      <source srcset="img/representation-img.webp" type="image/webp" />
+      <img
+        class="representation__img"
+        loading="lazy"
+        src="img/representation-img.jpg"
+        width="1584"
+        height="660"
+        alt=""
+      />
+    </picture>
   </div>
 </section>

@@ -1,9 +1,9 @@
 .hero {
+  @include image-set("../img/hero-bg");
   @include bg-cover;
 
   position: relative;
   background-color: var(--colo-bg);
-  background-image: url("../img/hero-bg.jpg");
   &__container {
     @include flex-all-center;
     flex-direction: column;

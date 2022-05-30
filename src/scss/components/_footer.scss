@@ -81,6 +81,7 @@
   }
   &__link {
     color: var(--color-light);
+    transition: border-bottom 0.3s ease-in-out;
     &:hover {
       border-bottom: 1px solid var(--color-light);
     }

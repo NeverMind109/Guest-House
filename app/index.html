@@ -3,6 +3,7 @@
   <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="theme-color" content="#111111" />
   <title>Guest House</title>
@@ -116,13 +117,18 @@
     </h2>
   </div>
   <div class="representation__image">
-    <img
-      class="representation__img"
-      src="img/representation-img.jpg"
-      alt=""
-      width="1584"
-      height="660"
-    />
+    <picture>
+      <source srcset="img/representation-img.avif" type="image/avif" />
+      <source srcset="img/representation-img.webp" type="image/webp" />
+      <img
+        class="representation__img"
+        loading="lazy"
+        src="img/representation-img.jpg"
+        width="1584"
+        height="660"
+        alt=""
+      />
+    </picture>
   </div>
 </section>
 
@@ -201,7 +207,7 @@
           height="36"
         />
         <div class="advantage__content">
-          <h4 class="text advantage__title">Modern Kitchen Appliances</h4>
+          <h3 class="text advantage__title">Modern Kitchen Appliances</h3>
           <p class="text advantage__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
@@ -216,7 +222,7 @@
           height="36"
         />
         <div class="advantage__content">
-          <h4 class="text advantage__title">Air Conditioner</h4>
+          <h3 class="text advantage__title">Air Conditioner</h3>
           <p class="text advantage__text">
             Nullam scelerisque aliquam odio et faucibus.
           </p>
@@ -231,7 +237,7 @@
           height="36"
         />
         <div class="advantage__content">
-          <h4 class="text advantage__title">Outdoor Paths</h4>
+          <h3 class="text advantage__title">Outdoor Paths</h3>
           <p class="text advantage__text">
             Nulla rhoncus feugiat eros quis consectetur.
           </p>
@@ -246,7 +252,7 @@
           height="36"
         />
         <div class="advantage__content">
-          <h4 class="text advantage__title">Storage Solutions</h4>
+          <h3 class="text advantage__title">Storage Solutions</h3>
           <p class="text advantage__text">
             Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.
           </p>
@@ -261,7 +267,7 @@
           height="36"
         />
         <div class="advantage__content">
-          <h4 class="text advantage__title">Coffee Maker</h4>
+          <h3 class="text advantage__title">Coffee Maker</h3>
           <p class="text advantage__text">
             Vestibulum sit amet urna turpis. Mauris euismod elit et nisi
             ultrices, ut faucibus orci tincidunt.
@@ -277,7 +283,7 @@
           height="36"
         />
         <div class="advantage__content">
-          <h4 class="text advantage__title">Cutlery Selection</h4>
+          <h3 class="text advantage__title">Cutlery Selection</h3>
           <p class="text advantage__text">
             Duis tristique sed lorem a vestibulum.
           </p>
@@ -292,7 +298,7 @@
           height="36"
         />
         <div class="advantage__content">
-          <h4 class="text advantage__title">Natural Scenery</h4>
+          <h3 class="text advantage__title">Natural Scenery</h3>
           <p class="text advantage__text">
             Cras commodo consequat orci, in convallis risus egestas non.
           </p>
@@ -307,7 +313,7 @@
           height="36"
         />
         <div class="advantage__content">
-          <h4 class="text advantage__title">Take-away Options</h4>
+          <h3 class="text advantage__title">Take-away Options</h3>
           <p class="text advantage__text">
             Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus
             libero ac, cursus quam.
@@ -358,9 +364,9 @@
             </svg>
           </div>
         </div>
-        <h4 class="review__title">
+        <h3 class="review__title">
           We had an amazing stay at the Guest House!
-        </h4>
+        </h3>
         <p class="text review__descr">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           varius enim in eros elementum tristique. Duis cursus, mi quis viverra
@@ -398,7 +404,7 @@
             </svg>
           </div>
         </div>
-        <h4 class="review__title">Beautiful little hideaway.</h4>
+        <h3 class="review__title">Beautiful little hideaway.</h3>
         <p class="text review__descr">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           varius enim in eros elementum tristique. Duis cursus, mi quis viverra
@@ -435,7 +441,7 @@
             </svg>
           </div>
         </div>
-        <h4 class="review__title">Lorem ipsum.</h4>
+        <h3 class="review__title">Lorem ipsum.</h3>
         <p class="text review__descr">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           varius enim in eros elementum tristique.
@@ -470,9 +476,9 @@
             </svg>
           </div>
         </div>
-        <h4 class="review__title">
+        <h3 class="review__title">
           We had an amazing stay at the Guest House!
-        </h4>
+        </h3>
         <p class="text review__descr">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quae
           iste harum, iusto sequi autem consequatur molestiae quidem. Qui
@@ -509,7 +515,7 @@
             </svg>
           </div>
         </div>
-        <h4 class="review__title">Lorem ipsum dolor sit.</h4>
+        <h3 class="review__title">Lorem ipsum dolor sit.</h3>
         <p class="text review__descr">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem,
           nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -545,7 +551,7 @@
             </svg>
           </div>
         </div>
-        <h4 class="review__title">Lorem ipsum dolor sit amet.</h4>
+        <h3 class="review__title">Lorem ipsum dolor sit amet.</h3>
         <p class="text review__descr">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
           quae, dolore molestias asperiores vitae numquam ipsum vel quo tempore
@@ -560,9 +566,11 @@
     <div class="reviews__btn-wrapper">
       <button
         class="btn-reset reviews__slider-btn reviews__slider-prev"
+        aria-label="Slider Previous Button"
       ></button>
       <button
         class="btn-reset reviews__slider-btn reviews__slider-next"
+        aria-label="Slider Next Button"
       ></button>
     </div>
   </div>
@@ -570,13 +578,18 @@
 
         <section class="together">
   <div class="together__image">
-    <img
-      class="together__img"
-      src="img/room.jpg"
-      alt=""
-      width="1440"
-      height="600"
-    />
+    <picture>
+      <source srcset="img/room.avif" type="image/avif" />
+      <source srcset="img/room.webp" type="image/webp" />
+      <img
+        class="together__img"
+        loading="lazy"
+        src="img/room.jpg"
+        width="1440"
+        height="600"
+        alt=""
+      />
+    </picture>
   </div>
   <div class="container together__container">
     <div class="together__info">
@@ -672,7 +685,7 @@
   <div class="container footer__container">
     <div class="footer__upper">
       <div class="footer__column">
-        <h4 class="text footer__heading">Pages</h4>
+        <h3 class="text footer__heading">Pages</h3>
         <nav class="footer__nav" title="Footer navigation">
           <ul class="list-reset footer__list">
             <li class="footer__item">
@@ -697,24 +710,24 @@
         </nav>
       </div>
       <div class="footer__column">
-        <h4 class="text footer__heading">Social Media</h4>
+        <h3 class="text footer__heading">Social Media</h3>
         <ul class="list-reset social">
           <li class="social__item">
-            <a class="social__link" href="#" aria-label="airnb">
+            <a class="social__link" href="#" aria-label="Our Airnb Link">
               <svg class="">
                 <use xlink:href="img/sprite.svg#airnb"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#" aria-label="facebook">
+            <a class="social__link" href="#" aria-label="Our Facebook Link">
               <svg class="">
                 <use xlink:href="img/sprite.svg#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#" aria-label="instagram">
+            <a class="social__link" href="#" aria-label="Our Instagram Link">
               <svg class="">
                 <use xlink:href="img/sprite.svg#instagram"></use>
               </svg>
@@ -723,7 +736,7 @@
         </ul>
       </div>
       <div class="footer__column">
-        <h4 class="text footer__heading">Newsletter</h4>
+        <h3 class="text footer__heading">Newsletter</h3>
         <p class="text footer__descr">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           varius enim in eros elementum tristique.
@@ -735,7 +748,9 @@
             placeholder="Email"
             required
           />
-          <button class="btn-reset btn footer__btn">Submit</button>
+          <button class="btn-reset btn footer__btn" type="submit">
+            Submit
+          </button>
         </form>
       </div>
     </div>
