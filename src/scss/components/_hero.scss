@@ -1,5 +1,5 @@
 .hero {
-  @include image-set("../img/hero-bg");
+  background-image: url("../img/hero-bg.webp");
   @include bg-cover;
 
   position: relative;

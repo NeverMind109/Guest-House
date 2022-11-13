@@ -54,9 +54,13 @@
     margin-right: 16px;
   }
   &__text {
+    width: 90%;
     display: block;
     color: var(--color-shaft);
     padding-bottom: 10px;
+    @include small-tablet {
+      width: 100%;
+    }
   }
 
   @include small-tablet {
